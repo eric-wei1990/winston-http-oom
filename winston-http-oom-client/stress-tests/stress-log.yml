@@ -1,0 +1,10 @@
+config:
+  target: http://localhost:3000
+  phases:
+    - duration: 1800
+      arrivalRate: 3000
+      name: 3000 vusers
+scenarios:
+  - flow:
+    - get:
+        url: "/api/v3/sites/s_87088408979196312/report"
